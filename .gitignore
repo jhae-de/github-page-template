@@ -1,0 +1,12 @@
+# IDE
+/.idea/
+
+# Ruby, Jekyll and Bundler
+/.jekyll-cache/
+/_site/
+/Gemfile.lock
+
+# Project
+/node_modules/
+/.bash-history
+/.env

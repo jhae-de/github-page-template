@@ -1,0 +1,18 @@
+services:
+  jekyll:
+    image: ghcr.io/jhae-de/jekyll:latest
+    container_name: ${COMPOSE_PROJECT_NAME:-jhae-github-page-template}-jekyll
+    environment:
+      HISTFILE: /home/user/workspace/.bash-history
+    working_dir: /home/user/workspace
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+      - ./:/home/user/workspace
+      - gems:/home/user/gems
+    stdin_open: true
+    tty: true
+
+volumes:
+  gems:

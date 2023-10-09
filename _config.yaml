@@ -1,0 +1,10 @@
+plugins:
+  - jekyll-remote-theme
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+
+remote_theme: jhae-de/github-page-theme@74ec66bf9c5c2f8dd367a45ef16012c26c8874dc

@@ -1,0 +1,3 @@
+customSyntax: postcss-sass
+extends:
+  - '@jhae/stylelint-config-strict-scss'
