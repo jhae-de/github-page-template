@@ -12,13 +12,18 @@
   "homepage": "https://github.com/jhae-de/github-page-template",
   "license": "MIT",
   "scripts": {
-    "lint": "npm run-script lint:prettier && npm run-script lint:sass",
-    "lint:prettier": "prettier . --check --ignore-path .gitignore",
-    "lint:sass": "stylelint ./_sass --formatter verbose --quiet"
+    "lint": "npm run-script lint:prettier",
+    "lint:prettier": "prettier . --check"
   },
   "devDependencies": {
     "@jhae/stylelint-config-strict-scss": "^2.1",
-    "postcss-sass": "^0.5",
-    "prettier": "^3.3"
+    "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "autoprefixer": "^10.4",
+    "cssnano": "^7.0",
+    "postcss": "^8.4",
+    "postcss-cli": "^11.0",
+    "postcss-scss": "^4.0",
+    "prettier": "^3.3",
+    "tailwindcss": "^3.4"
   }
 }

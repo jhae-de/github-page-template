@@ -35,3 +35,7 @@ install: docker-pull start ## Install the dependencies
 .PHONY: server
 server: start ## Build the site and serve it locally at http://localhost:4000
 	@docker compose exec jekyll bash -c 'bundle exec jekyll serve --host 0.0.0.0 --livereload'
+
+.PHONY: lint
+lint: start ## Run linter
+	@docker compose exec jekyll bash -c 'npm run-script lint'

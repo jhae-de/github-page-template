@@ -1,3 +1,4 @@
+plugins:
+  - "@shopify/prettier-plugin-liquid"
 printWidth: 120
 quoteProps: consistent
-singleQuote: true
