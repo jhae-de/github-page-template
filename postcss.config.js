@@ -3,9 +3,9 @@ const plugins = {
   tailwindcss: {},
 };
 
-if (process.env.JEKYLL_ENV === "production") {
+if (process.env.JEKYLL_ENV === 'production') {
   plugins.cssnano = {
-    preset: "default",
+    preset: 'default',
   };
 }
 

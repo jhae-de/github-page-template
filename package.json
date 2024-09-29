@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "@jhae/stylelint-config-strict-scss": "^2.1",
-    "@shopify/prettier-plugin-liquid": "^1.5.0",
     "autoprefixer": "^10.4",
     "cssnano": "^7.0",
     "postcss": "^8.4",

@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: weekly
       day: saturday
-      time: "04:00"
+      time: '04:00'
     groups:
       version-updates:
         applies-to: version-updates
@@ -13,7 +13,7 @@ updates:
           - minor
           - patch
     ignore:
-      - dependency-name: "*"
+      - dependency-name: '*'
         update-types:
           - version-update:semver-major
     reviewers:
@@ -24,7 +24,7 @@ updates:
     schedule:
       interval: weekly
       day: saturday
-      time: "04:10"
+      time: '04:10'
     groups:
       version-updates:
         applies-to: version-updates
@@ -32,7 +32,7 @@ updates:
           - minor
           - patch
     ignore:
-      - dependency-name: "*"
+      - dependency-name: '*'
         update-types:
           - version-update:semver-major
     reviewers:
@@ -43,6 +43,6 @@ updates:
     schedule:
       interval: weekly
       day: saturday
-      time: "04:20"
+      time: '04:20'
     reviewers:
       - jhae-de
