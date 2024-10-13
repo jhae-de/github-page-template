@@ -4,6 +4,17 @@ defaults:
     values:
       layout: default
 
+exclude:
+  - CHANGELOG.md
+  - docker-compose.yaml
+  - LICENSE
+  - makefile
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - README.md
+  - tailwind.config.js
+
 title: JHAE GitHub Page Template
 
 # -> GitHub metadata plugin
@@ -11,5 +22,5 @@ repository: jhae-de/github-page-template
 # <- GitHub metadata plugin
 
 # -> Remote theme plugin
-remote_theme: jhae-de/github-page-theme@1e90372d076d399e4d332ddd91a4ca177110ef85
+remote_theme: jhae-de/github-page-theme@7d2d3acf5b89f58743b492ebdb1e340acb67b291
 # <- Remote theme plugin

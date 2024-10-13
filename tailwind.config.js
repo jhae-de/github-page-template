@@ -1,9 +1,19 @@
-const colors = require('tailwindcss/colors');
+import colors from 'tailwindcss/colors';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html'],
   theme: {
+    fontFamily: {
+      sans: [
+        '"Roboto Flex Variable", ui-sans-serif, system-ui, sans-serif',
+        {
+          fontVariationSettings:
+            "'slnt' 0, 'wdth' 100, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712",
+        },
+      ],
+      mono: '"Source Code Pro Variable", ui-monospace, monospace',
+    },
     colors: {
       inherit: colors.inherit,
       current: colors.current,

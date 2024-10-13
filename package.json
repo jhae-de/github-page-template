@@ -12,11 +12,15 @@
   "homepage": "https://github.com/jhae-de/github-page-template",
   "license": "MIT",
   "scripts": {
-    "lint": "npm run-script lint:prettier",
-    "lint:prettier": "prettier . --check"
+    "fix": "npm run-script prettier:fix && npm run-script sass:fix",
+    "lint": "npm run-script prettier:lint && npm run-script sass:lint",
+    "prettier:fix": "prettier . --write",
+    "prettier:lint": "prettier . --check",
+    "sass:fix": "stylelint ./_sass --fix --formatter verbose",
+    "sass:lint": "stylelint ./_sass --formatter verbose --quiet"
   },
   "devDependencies": {
-    "@jhae/stylelint-config-strict-scss": "^2.1",
+    "@jhae/stylelint-config-strict-scss": "^2.5",
     "autoprefixer": "^10.4",
     "cssnano": "^7.0",
     "postcss": "^8.4",
