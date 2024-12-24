@@ -1,0 +1,26 @@
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+
+exclude:
+  - /bin
+  - /CHANGELOG.md
+  - /docker-compose.yaml
+  - /LICENSE
+  - /makefile
+  - /package.json
+  - /package-lock.json
+  - /postcss.config.js
+  - /README.md
+  - /tailwind.*.ts
+  - /tsconfig.json
+
+sass:
+  quiet_deps: true
+
+title: JHAE GitHub Page Template
+
+# GitHub metadata plugin options
+repository: jhae-de/github-page-template

@@ -1,0 +1,20 @@
+$-font-path: null !default;
+
+@use 'vendor/@fontsource-variable/roboto-flex/mixins' as roboto with (
+  $directory: $-font-path
+);
+@use 'vendor/@fontsource-variable/roboto-mono/mixins' as roboto-mono with (
+  $directory: $-font-path
+);
+@use 'vendor/@fortawesome/fontawesome-free/fontawesome';
+@use 'vendor/@fortawesome/fontawesome-free/brands' with (
+  $fa-font-path: $-font-path
+);
+@use 'vendor/@fortawesome/fontawesome-free/regular' with (
+  $fa-font-path: $-font-path
+);
+@use 'vendor/@fortawesome/fontawesome-free/solid' with (
+  $fa-font-path: $-font-path
+);
+@include roboto.faces();
+@include roboto-mono.faces();

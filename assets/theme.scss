@@ -1,0 +1,9 @@
+---
+---
+
+@use 'index' with (
+  $-paths: (
+    'fonts': '{{ site.data.app.paths.fonts | relative_url }}',
+    'images': '{{ site.data.app.paths.images | relative_url }}',
+  )
+);

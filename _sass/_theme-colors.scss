@@ -1,0 +1,61 @@
+/**
+ * The color palettes were generated at https://tints.dev.
+ * https://tints.dev/?primary=404850&secondary=504840
+ *
+ * The stops 800, 900 and 950 of the primary colors were generated slightly differently.
+ * The default stop was set to 400.
+ * The following stops were then used:
+ *   - 600 for 800
+ *   - 700 for 900
+ *   - 800 for 950
+ */
+
+@layer base {
+  :root {
+    // Primary colors (default stop: 700)
+    --theme-color-primary-50: 241 242 244;
+    --theme-color-primary-100: 227 230 232;
+    --theme-color-primary-200: 196 201 207;
+    --theme-color-primary-300: 167 176 185;
+    --theme-color-primary-400: 139 150 162;
+    --theme-color-primary-500: 111 125 139;
+    --theme-color-primary-600: 86 97 108;
+    --theme-color-primary-700: 64 72 80;
+    --theme-color-primary-800: 43 48 54;
+    --theme-color-primary-900: 32 36 40;
+    --theme-color-primary-950: 20 23 25;
+    --theme-color-primary-default: var(--theme-color-primary-700);
+
+    // Secondary colors (default stop: 700)
+    --theme-color-secondary-50: 244 242 241;
+    --theme-color-secondary-100: 232 230 227;
+    --theme-color-secondary-200: 207 201 196;
+    --theme-color-secondary-300: 185 176 167;
+    --theme-color-secondary-400: 162 150 139;
+    --theme-color-secondary-500: 139 125 111;
+    --theme-color-secondary-600: 108 97 86;
+    --theme-color-secondary-700: 80 72 64;
+    --theme-color-secondary-800: 54 48 43;
+    --theme-color-secondary-900: 25 23 20;
+    --theme-color-secondary-950: 14 13 11;
+    --theme-color-secondary-default: var(--theme-color-secondary-700);
+
+    // Light mode
+    --app-header-background-color: theme('colors.white');
+    --app-header-border-color: theme('colors.gray.200');
+    --app-header-text-color: theme('colors.primary.700');
+    --app-content-background-color: theme('colors.gray.50');
+    --app-content-text-color: theme('colors.primary.600');
+    --heading-color: theme('colors.primary.700');
+
+    // Dark mode
+    @media (prefers-color-scheme: dark) {
+      --app-header-background-color: theme('colors.primary.900');
+      --app-header-border-color: theme('colors.primary.950');
+      --app-header-text-color: theme('colors.primary.200');
+      --app-content-background-color: theme('colors.primary.800');
+      --app-content-text-color: theme('colors.primary.300');
+      --heading-color: theme('colors.primary.200');
+    }
+  }
+}

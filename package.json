@@ -1,0 +1,40 @@
+{
+  "name": "@jhae/github-page-template",
+  "version": "0.0.0",
+  "author": {
+    "name": "JHAE",
+    "url": "https://github.com/jhae-de"
+  },
+  "repository": {
+    "url": "https://github.com/jhae-de/github-page-template.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/jhae-de/github-page-template",
+  "license": "MIT",
+  "scripts": {
+    "fix": "npm run-script prettier:fix && npm run-script sass:fix",
+    "lint": "npm run-script prettier:lint && npm run-script sass:lint",
+    "postinstall": "./bin/post-install.sh",
+    "prettier:fix": "prettier . --write",
+    "prettier:lint": "prettier . --check",
+    "sass:fix": "stylelint ./_sass --fix --formatter verbose",
+    "sass:lint": "stylelint ./_sass --formatter verbose --quiet"
+  },
+  "devDependencies": {
+    "@fontsource-variable/roboto-flex": "^5.1",
+    "@fontsource-variable/roboto-mono": "^5.1",
+    "@fortawesome/fontawesome-free": "^6.7",
+    "@fortawesome/fontawesome-svg-core": "^6.7",
+    "@jhae/stylelint-config-strict-scss": "^3.1",
+    "@savvywombat/tailwindcss-grid-areas": "^4.0",
+    "@shopify/prettier-plugin-liquid": "^1.6",
+    "autoprefixer": "^10.4",
+    "cssnano": "^7.0",
+    "postcss": "^8.4",
+    "postcss-cli": "^11.0",
+    "prettier": "^3.4",
+    "prettier-plugin-tailwindcss": "^0.6",
+    "rfs": "^10.0",
+    "tailwindcss": "^3.4"
+  }
+}

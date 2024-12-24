@@ -1,0 +1,10 @@
+$-paths: () !default;
+
+@use 'sass:map';
+@use 'tailwind-layers';
+@use 'font-faces' with (
+  $-font-path: map.get($map: $-paths, $key: 'fonts')
+);
+@use 'theme-colors';
+@use 'base-styles';
+@use 'syntax-highlighting';

@@ -1,0 +1,11 @@
+{% assign base-href = site.data.app.paths.images
+  | append: '/logo.svg'
+  | relative_url
+  | append: '?'
+  | append: site.github.build_revision
+%}
+
+<svg viewBox="0 0 512 512" class="{{ include.class }}">
+  <use href="{{ base-href | append: '#logo-background' }}" class="fill-current"/>
+  <use href="{{ base-href | append: '#logo-shapes' }}" class="fill-gray-50 dark:fill-primary-800"/>
+</svg>

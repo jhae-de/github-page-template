@@ -1,0 +1,327 @@
+figure.highlight code {
+  // Comment
+  .c {
+    color: #408080;
+    font-style: italic;
+  }
+
+  // Comment.Multiline
+  .cm {
+    color: #408080;
+    font-style: italic;
+  }
+
+  // Comment.Preproc
+  .cp {
+    color: #bc7a00;
+  }
+
+  // Comment.Single
+  .c1 {
+    color: #408080;
+    font-style: italic;
+  }
+
+  // Comment.Special
+  .cs {
+    color: #408080;
+    font-style: italic;
+  }
+
+  // Error
+  .err {
+    border: 1px solid #ff0000;
+  }
+
+  // Generic.Deleted
+  .gd {
+    color: #a00000;
+  }
+
+  // Generic.Emph
+  .ge {
+    font-style: italic;
+  }
+
+  // Generic.Error
+  .gr {
+    color: #ff0000;
+  }
+
+  // Generic.Heading
+  .gh {
+    color: #000080;
+    font-weight: 700;
+  }
+
+  // Generic.Inserted
+  .gi {
+    color: #00a000;
+  }
+
+  // Generic.Output
+  .go {
+    color: #808080;
+  }
+
+  // Generic.Prompt
+  .gp {
+    color: #000080;
+    font-weight: 700;
+  }
+
+  // Generic.Strong
+  .gs {
+    font-weight: 700;
+  }
+
+  // Generic.Subheading
+  .gu {
+    color: #800080;
+    font-weight: 700;
+  }
+
+  // Generic.Traceback
+  .gt {
+    color: #0040d0;
+  }
+
+  // Highlight line
+  .hll {
+    background-color: #ffffcc;
+  }
+
+  // Keyword
+  .k {
+    color: #008000;
+    font-weight: 700;
+  }
+
+  // Keyword.Constant
+  .kc {
+    color: #008000;
+    font-weight: 700;
+  }
+
+  // Keyword.Declaration
+  .kd {
+    color: #008000;
+    font-weight: 700;
+  }
+
+  // Keyword.Namespace
+  .kn {
+    color: #008000;
+    font-weight: 700;
+  }
+
+  // Keyword.Pseudo
+  .kp {
+    color: #008000;
+  }
+
+  // Keyword.Reserved
+  .kr {
+    color: #008000;
+    font-weight: 700;
+  }
+
+  // Keyword.Type
+  .kt {
+    color: #b00040;
+  }
+
+  // Literal.Number
+  .m {
+    color: #666666;
+  }
+
+  // Literal.Number.Float
+  .mf {
+    color: #666666;
+  }
+
+  // Literal.Number.Hex
+  .mh {
+    color: #666666;
+  }
+
+  // Literal.Number.Integer
+  .mi {
+    color: #666666;
+  }
+
+  // Literal.Number.Integer.Long
+  .il {
+    color: #666666;
+  }
+
+  // Literal.Number.Oct
+  .mo {
+    color: #666666;
+  }
+
+  // Literal.String
+  .s {
+    color: #ba2121;
+  }
+
+  // Literal.String.Backtick
+  .sb {
+    color: #ba2121;
+  }
+
+  // Literal.String.Char
+  .sc {
+    color: #ba2121;
+  }
+
+  // Literal.String.Doc
+  .sd {
+    color: #ba2121;
+    font-style: italic;
+  }
+
+  // Literal.String.Double
+  .s2 {
+    color: #ba2121;
+  }
+
+  // Literal.String.Escape
+  .se {
+    color: #bb6622;
+    font-weight: 700;
+  }
+
+  // Literal.String.Heredoc
+  .sh {
+    color: #ba2121;
+  }
+
+  // Literal.String.Interpol
+  .si {
+    color: #bb6688;
+    font-weight: 700;
+  }
+
+  // Literal.String.Other
+  .sx {
+    color: #008000;
+  }
+
+  // Literal.String.Regex
+  .sr {
+    color: #bb6688;
+  }
+
+  // Literal.String.Single
+  .s1 {
+    color: #ba2121;
+  }
+
+  // Literal.String.Symbol
+  .ss {
+    color: #19177c;
+  }
+
+  // Name.Attribute
+  .na {
+    color: #7d9029;
+  }
+
+  // Name.Builtin
+  .nb {
+    color: #008000;
+  }
+
+  // Name.Builtin.Pseudo
+  .bp {
+    color: #008000;
+  }
+
+  // Name.Class
+  .nc {
+    color: #0000ff;
+    font-weight: 700;
+  }
+
+  // Name.Constant
+  .no {
+    color: #880000;
+  }
+
+  // Name.Decorator
+  .nd {
+    color: #aa22ff;
+  }
+
+  // Name.Entity
+  .ni {
+    color: #999999;
+    font-weight: 700;
+  }
+
+  // Name.Exception
+  .ne {
+    color: #d2413a;
+    font-weight: 700;
+  }
+
+  // Name.Function
+  .nf {
+    color: #0000ff;
+  }
+
+  // Name.Label
+  .nl {
+    color: #a0a000;
+  }
+
+  // Name.Namespace
+  .nn {
+    color: #0000ff;
+    font-weight: 700;
+  }
+
+  // Name.Tag
+  .nt {
+    color: #008000;
+    font-weight: 700;
+  }
+
+  // Name.Variable
+  .nv {
+    color: #19177c;
+  }
+
+  // Name.Variable.Class
+  .vc {
+    color: #19177c;
+  }
+
+  // Name.Variable.Global
+  .vg {
+    color: #19177c;
+  }
+
+  // Name.Variable.Instance
+  .vi {
+    color: #19177c;
+  }
+
+  // Operator
+  .o {
+    color: #666666;
+  }
+
+  // Operator.Word
+  .ow {
+    color: #aa22ff;
+    font-weight: 700;
+  }
+
+  // Text.Whitespace
+  .w {
+    color: #bbbbbb;
+  }
+}

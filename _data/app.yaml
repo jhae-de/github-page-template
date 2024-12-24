@@ -1,0 +1,10 @@
+paths:
+  fonts: /assets/fonts
+  images: /assets/images
+
+theme:
+  colors:
+    brand: '#202830'
+    favicon:
+      android-theme: '#202830'
+      windows-tile: '#FFFFFF'

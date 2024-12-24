@@ -1,0 +1,1 @@
+extends: '@jhae/stylelint-config-strict-scss'

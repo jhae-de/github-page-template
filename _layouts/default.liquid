@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    {% include site-head.liquid %}
+    {% include site-head-custom.liquid %}
+  </head>
+  <body
+    class="relative grid min-h-dvh cursor-default grid-cols-app grid-rows-app grid-areas-app rfs:text-lg"
+  >
+    <header
+      class="sticky top-0 grid h-16 grid-cols-app-header grid-rows-app-header items-center gap-2 border-b border-solid border-[color:--app-header-border-color] bg-[color:--app-header-background-color] pl-4 pr-2 font-medium text-[color:--app-header-text-color] grid-areas-app-header grid-in-app-header"
+    >
+      {% include logo.liquid class='h-10 grid-in-app-header-logo' %}
+
+      <div class="text-[1.25rem]/none grid-in-app-header-title">{{ site.title }}</div>
+
+      <div class="grid size-10 place-items-center grid-in-app-header-menu">
+        <i class="fa-bars fa-solid scale-x-[calc(24/21)] text-[1.5rem]"></i>
+      </div>
+    </header>
+
+    <main
+      class="bg-[color:--app-content-background-color] p-4 text-[color:--app-content-text-color] grid-in-app-content"
+    >
+      {{ content }}
+    </main>
+
+    <footer class="p-4 grid-in-app-footer">Footer</footer>
+  </body>
+</html>
