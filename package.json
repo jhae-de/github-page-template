@@ -12,15 +12,17 @@
   "homepage": "https://github.com/jhae-de/github-page-template",
   "license": "MIT",
   "scripts": {
-    "fix": "npm run-script prettier:fix && npm run-script sass:fix",
-    "lint": "npm run-script prettier:lint && npm run-script sass:lint",
-    "postinstall": "./bin/post-install.sh",
-    "prettier:fix": "prettier . --write",
-    "prettier:lint": "prettier . --check",
-    "sass:fix": "stylelint ./_sass --fix --formatter verbose",
-    "sass:lint": "stylelint ./_sass --formatter verbose --quiet"
+    "fix": "npm run-script fix:prettier && npm run-script fix:sass",
+    "fix:prettier": "prettier . --write",
+    "fix:sass": "stylelint ./_sass --fix --formatter verbose",
+    "lint": "npm run-script lint:prettier && npm run-script lint:eslint && npm run-script lint:sass",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier . --check",
+    "lint:sass": "stylelint ./_sass --formatter verbose --quiet",
+    "postinstall": "./bin/post-install.sh"
   },
   "devDependencies": {
+    "@eslint/js": "^9.17",
     "@fontsource-variable/roboto-flex": "^5.1",
     "@fontsource-variable/roboto-mono": "^5.1",
     "@fortawesome/fontawesome-free": "^6.7",
@@ -30,11 +32,17 @@
     "@shopify/prettier-plugin-liquid": "^1.6",
     "autoprefixer": "^10.4",
     "cssnano": "^7.0",
+    "eslint": "^9.17",
+    "eslint-config-prettier": "^9.1",
+    "eslint-plugin-prettier": "^5.2",
+    "globals": "^15.14",
     "postcss": "^8.4",
     "postcss-cli": "^11.0",
     "prettier": "^3.4",
     "prettier-plugin-tailwindcss": "^0.6",
     "rfs": "^10.0",
-    "tailwindcss": "^3.4"
+    "tailwindcss": "^3.4",
+    "typescript": "^5.7",
+    "typescript-eslint": "^8.18"
   }
 }

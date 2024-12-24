@@ -1,6 +1,6 @@
 import { RecursiveKeyValuePair, type ResolvableTo } from 'tailwindcss/types/config';
 
-const generateColorStops: Function = (colorName: string): RecursiveKeyValuePair =>
+const generateColorStops: (colorName: string) => RecursiveKeyValuePair = (colorName: string): RecursiveKeyValuePair =>
   [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950].reduce(
     (colorStops: RecursiveKeyValuePair, colorStop: number): RecursiveKeyValuePair => ({
       ...colorStops,
@@ -11,7 +11,9 @@ const generateColorStops: Function = (colorName: string): RecursiveKeyValuePair 
     },
   );
 
-const generateColors: Function = (...colorNames: string[]): ResolvableTo<RecursiveKeyValuePair> =>
+const generateColors: (...colorNames: string[]) => ResolvableTo<RecursiveKeyValuePair> = (
+  ...colorNames: string[]
+): ResolvableTo<RecursiveKeyValuePair> =>
   colorNames.reduce(
     (colorNames: ResolvableTo<RecursiveKeyValuePair>, colorName: string): ResolvableTo<RecursiveKeyValuePair> => ({
       ...colorNames,

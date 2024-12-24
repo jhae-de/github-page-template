@@ -8,6 +8,7 @@ exclude:
   - /bin
   - /CHANGELOG.md
   - /docker-compose.yaml
+  - /eslint.config.mjs
   - /LICENSE
   - /makefile
   - /package.json

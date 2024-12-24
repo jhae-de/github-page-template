@@ -56,6 +56,7 @@ export default {
     },
   },
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/unbound-method
     plugin(({ matchUtilities, theme }: PluginAPI): void => {
       matchUtilities(
         { 'icon-size': (value: string): { fontSize: string } => ({ fontSize: value }) },
