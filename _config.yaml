@@ -13,10 +13,13 @@ exclude:
   - /makefile
   - /package.json
   - /package-lock.json
-  - /postcss.config.js
+  - /postcss.config.ts
   - /README.md
   - /tailwind.*.ts
   - /tsconfig.json
+
+postcss:
+  config: postcss.config.ts
 
 sass:
   quiet_deps: true
