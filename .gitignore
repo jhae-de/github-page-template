@@ -6,7 +6,6 @@
 /_site
 
 # Project
-/_sass/vendor
 /assets/fonts
 /node_modules
 /.bash-history

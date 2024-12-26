@@ -1,19 +1,19 @@
 $-font-path: null !default;
 
-@use 'vendor/@fontsource-variable/roboto-flex/mixins' as roboto with (
+@use './../node_modules/@fontsource-variable/roboto-flex/scss/mixins' as roboto with (
   $directory: $-font-path
 );
-@use 'vendor/@fontsource-variable/roboto-mono/mixins' as roboto-mono with (
+@use './../node_modules/@fontsource-variable/roboto-mono/scss/mixins' as roboto-mono with (
   $directory: $-font-path
 );
-@use 'vendor/@fortawesome/fontawesome-free/fontawesome';
-@use 'vendor/@fortawesome/fontawesome-free/brands' with (
+@use './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@use './../node_modules/@fortawesome/fontawesome-free/scss/brands' with (
   $fa-font-path: $-font-path
 );
-@use 'vendor/@fortawesome/fontawesome-free/regular' with (
+@use './../node_modules/@fortawesome/fontawesome-free/scss/regular' with (
   $fa-font-path: $-font-path
 );
-@use 'vendor/@fortawesome/fontawesome-free/solid' with (
+@use './../node_modules/@fortawesome/fontawesome-free/scss/solid' with (
   $fa-font-path: $-font-path
 );
 @include roboto.faces();

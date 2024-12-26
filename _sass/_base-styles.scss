@@ -8,7 +8,7 @@ $-heading-font-sizes: (
 );
 
 @use 'sass:map';
-@use 'vendor/rfs' with (
+@use './../node_modules/rfs/scss' as rfs with (
   $rfs-base-value: 1.125rem,
   $rfs-breakpoint: 1280
 );
