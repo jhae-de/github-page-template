@@ -7,6 +7,8 @@
 
 # Project
 /assets/fonts
+/assets/scripts/*.js
+/coverage
 /node_modules
 /.bash-history
 /.env

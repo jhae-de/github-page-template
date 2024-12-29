@@ -5,7 +5,7 @@ PROJECT_NAME ?= JHAE GitHub Page Template
 COMPOSE_PROJECT_NAME ?= $(shell echo $(PROJECT_NAME) | sed 's/\(.*\)/\L\1/;s/[^[:alnum:]_-]/-/g')
 
 .DEFAULT_GOAL = help
-TARGET_DESCRIPTION_INDENTATION = 15
+TARGET_DESCRIPTION_INDENTATION = 24
 
 .PHONY: help
 help: ## Display this help
@@ -30,7 +30,12 @@ app-bash: start ## Access the jekyll container
 
 .PHONY: app-build
 app-build: app-clean ## Perform a one off build of the site
+	@docker compose exec jekyll bash -c 'npm run-script build'
 	@docker compose exec jekyll bash -c 'bundle exec jekyll build'
+
+.PHONY: app-build-scripts
+app-build-scripts: start ## Perform a one off build of the javascript files
+	@docker compose exec jekyll bash -c 'npm run-script build:scripts'
 
 .PHONY: app-clean
 app-clean: start ## Remove all generated files: destination folder, metadata file, Sass and Jekyll caches
@@ -52,6 +57,26 @@ app-lint: start ## Detect problems in the source code
 .PHONY: app-serve
 app-serve: app-clean ## Build the site and serve it locally at http://localhost:4000
 	@docker compose exec jekyll bash -c 'bundle exec jekyll serve --host 0.0.0.0 --livereload'
+
+.PHONY: app-test
+app-test: start ## Run tests
+	@docker compose exec jekyll bash -c 'npm run-script test'
+
+.PHONY: app-test-coverage
+app-test-coverage: start ## Run tests with coverage report
+	@docker compose exec jekyll bash -c 'npm run-script test:coverage'
+
+.PHONY: app-watch-scripts
+app-watch-scripts: start ## Build the javascript files and watch for changes
+	@docker compose exec jekyll bash -c 'npm run-script watch:scripts'
+
+.PHONY: app-watch-test
+app-watch-test: start ## Run tests and watch file changes
+	@docker compose exec jekyll bash -c 'npm run-script watch:test'
+
+.PHONY: app-watch-test-coverage
+app-watch-test-coverage: start ## Run tests with coverage report and watch file changes
+	@docker compose exec jekyll bash -c 'npm run-script watch:test:coverage'
 
 # DOCKER TARGETS
 .PHONY: docker-destroy

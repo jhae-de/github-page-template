@@ -49,7 +49,7 @@
     --heading-color: theme('colors.primary.700');
 
     // Dark mode
-    @media (prefers-color-scheme: dark) {
+    &[data-color-scheme='dark'] {
       --app-header-background-color: theme('colors.primary.900');
       --app-header-border-color: theme('colors.primary.950');
       --app-header-text-color: theme('colors.primary.200');

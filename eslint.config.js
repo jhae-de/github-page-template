@@ -18,4 +18,7 @@ export default tslint.config(
     files: ['**/*.{js,cjs,mjs}'],
     extends: [tslint.configs.disableTypeChecked],
   },
+  {
+    ignores: ['_site', 'assets/scripts/*.js'],
+  },
 );

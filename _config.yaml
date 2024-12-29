@@ -5,10 +5,15 @@ defaults:
       layout: default
 
 exclude:
+  - /assets/scripts/src
   - /bin
+  - /coverage
+  - /build-scripts.ts
   - /CHANGELOG.md
+  - /codecov.yaml
   - /docker-compose.yaml
-  - /eslint.config.mjs
+  - /eslint.config.js
+  - /jest.config.js
   - /LICENSE
   - /makefile
   - /package.json

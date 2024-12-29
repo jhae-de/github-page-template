@@ -8,7 +8,8 @@ import { rfsPlugin } from './tailwind.plugin.rfs';
 import { generateColors } from './tailwind.util';
 
 export default {
-  content: ['./index.liquid.html', './_includes/**/*.liquid', './_layouts/**/*.liquid'],
+  content: ['./{_includes,_layouts}/**/*.liquid', './assets/scripts/*.js', './index.liquid.html'],
+  darkMode: ['selector', ':root[data-color-scheme="dark"]'],
   theme: {
     colors: {
       inherit,
@@ -39,7 +40,7 @@ export default {
         ],
         // prettier-ignore
         'app-header': [
-          'app-header-logo app-header-title app-header-menu',
+          'app-header-logo app-header-title app-header-color-scheme app-header-menu',
         ],
       },
       gridTemplateColumns: {
@@ -49,6 +50,10 @@ export default {
       gridTemplateRows: {
         'app': 'auto 1fr auto',
         'app-header': '1fr',
+      },
+      spacing: {
+        4.5: '1.125rem',
+        18: '4.5rem',
       },
       transitionDuration: {
         DEFAULT: '300ms',
