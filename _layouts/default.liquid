@@ -8,37 +8,15 @@
     class="relative grid min-h-dvh cursor-default grid-cols-app grid-rows-app grid-areas-app rfs:text-lg"
   >
     <header
-      class="sticky top-0 grid h-18 grid-cols-app-header grid-rows-app-header items-center gap-2 border-b border-solid border-[color:--app-header-border-color] bg-[color:--app-header-background-color] pl-4 pr-2 font-medium text-[color:--app-header-text-color] grid-areas-app-header grid-in-app-header"
+      class="sticky top-0 grid h-18 grid-cols-app-header grid-rows-app-header items-center gap-4 border-b border-solid border-[color:--app-header-border-color] bg-[color:--app-header-background-color] px-4 font-medium text-[color:--app-header-text-color] grid-areas-app-header grid-in-app-header"
     >
-      {% include logo.liquid class='h-10 grid-in-app-header-logo' %}
+      {% include components/logo.liquid class='h-10 grid-in-app-header-logo' %}
 
       <div class="text-[1.25rem]/none grid-in-app-header-title">{{ site.title }}</div>
 
-      <button class="grid size-10 place-items-center grid-in-app-header-color-scheme" data-color-scheme-toggle>
-        <svg class="size-5 fill-[color:--app-header-text-color] transition-[fill]" viewBox="0 0 32 32">
-          <g
-            class="origin-center rotate-90 scale-50 transition-transform duration-500 dark:rotate-0 dark:scale-100"
-          >
-            <clipPath
-              class="transition-transform duration-500 dark:-translate-x-full"
-              id="cutout"
-            >
-              <path
-                d="M64,20.421L64,32L0,32L0,0L43.579,0C42.988,1.668 42.667,3.464 42.667,5.333C42.667,14.164 49.836,21.333 58.667,21.333C60.536,21.333 62.332,21.012 64,20.421Z"
-              />
-            </clipPath>
+      {% include components/color-scheme-toggle.liquid class='grid size-6 place-items-center grid-in-app-header-color-scheme [&_>_svg]:size-5' %}
 
-            <circle clip-path="url(#cutout)" cx="16" cy="16" r="16"/>
-          </g>
-
-          <path
-            class="origin-center transition-[opacity,transform] duration-500 ease-[cubic-bezier(0,0,0.25,1.25)] dark:rotate-180 dark:scale-50 dark:opacity-0 dark:duration-150 dark:ease-in"
-            d="M5.416,17.333L0,17.333L0,14.667L5.416,14.667C5.361,15.104 5.333,15.548 5.333,16C5.333,16.452 5.361,16.896 5.416,17.333ZM7.575,9.46L3.744,5.629L5.629,3.744L9.46,7.575C8.756,8.123 8.123,8.756 7.575,9.46ZM14.667,5.416L14.667,0L17.333,0L17.333,5.416C16.896,5.361 16.452,5.333 16,5.333C15.548,5.333 15.104,5.361 14.667,5.416ZM22.54,7.575L26.371,3.744L28.256,5.629L24.425,9.46C23.877,8.756 23.244,8.123 22.54,7.575ZM26.584,14.667L32,14.667L32,17.333L26.584,17.333C26.639,16.896 26.667,16.452 26.667,16C26.667,15.548 26.639,15.104 26.584,14.667ZM24.425,22.54L28.256,26.371L26.371,28.256L22.54,24.425C23.244,23.877 23.877,23.244 24.425,22.54ZM17.333,26.584L17.333,32L14.667,32L14.667,26.584C15.104,26.639 15.548,26.667 16,26.667C16.452,26.667 16.896,26.639 17.333,26.584ZM9.46,24.425L5.629,28.256L3.744,26.371L7.575,22.54C8.123,23.244 8.756,23.877 9.46,24.425Z"
-          />
-        </svg>
-      </button>
-
-      <button class="grid size-10 place-items-center grid-in-app-header-menu" data-color-scheme-toggle>
+      <button class="grid size-6 place-items-center grid-in-app-header-menu">
         <i class="fa-bars fa-solid scale-x-[calc(24/21)] text-[1.5rem]"></i>
       </button>
     </header>

@@ -50,8 +50,8 @@
 
     // Dark mode
     &[data-color-scheme='dark'] {
-      --app-header-background-color: theme('colors.primary.900');
-      --app-header-border-color: theme('colors.primary.950');
+      --app-header-background-color: theme('colors.primary.800');
+      --app-header-border-color: theme('colors.primary.900');
       --app-header-text-color: theme('colors.primary.200');
       --app-content-background-color: theme('colors.primary.800');
       --app-content-text-color: theme('colors.primary.300');
