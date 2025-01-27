@@ -6,7 +6,7 @@ import process from 'node:process';
 const isWatchModeEnabled: boolean = process.argv.slice(2).includes('--watch');
 
 const buildContext: BuildContext = await esbuild.context({
-  entryPoints: ['./assets/scripts/src/*.ts'],
+  entryPoints: ['./assets/scripts/*.ts'],
   outdir: './assets/scripts',
   bundle: true,
   minify: process.env.JEKYLL_ENV === 'production',

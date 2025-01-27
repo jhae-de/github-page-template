@@ -5,7 +5,8 @@ defaults:
       layout: default
 
 exclude:
-  - /assets/scripts/src
+  - /assets/scripts/*.ts
+  - /assets/scripts/**/*.ts
   - /bin
   - /coverage
   - /build-scripts.ts
