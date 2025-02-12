@@ -2,16 +2,16 @@
 layout: null
 ---
 {
-  "name": "",
-  "short_name": "",
+  "name": "{{ site.data.app.name }}",
+  "short_name": "{{ site.data.app.name }}",
   "icons": [
     {
-      "src": "{{ site.data.app.paths.images | append: '/favicons/android-chrome-192x192.png?' | append: site.github.build_revision | relative_url }}",
+      "src": "{{ site.data.app.paths.images | append: '/favicons/web-app-manifest-192x192.png?' | append: site.github.build_revision | relative_url }}",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "{{ site.data.app.paths.images | append: '/favicons/android-chrome-512x512.png?' | append: site.github.build_revision | relative_url }}",
+      "src": "{{ site.data.app.paths.images | append: '/favicons/web-app-manifest-512x512.png?' | append: site.github.build_revision | relative_url }}",
       "sizes": "512x512",
       "type": "image/png"
     }

@@ -1,8 +1,7 @@
 {% assign base-href = site.data.app.paths.images
-  | append: '/favicons/$file$'
-  | relative_url
-  | append: '?'
+  | append: '/favicons/$file$?'
   | append: site.github.build_revision
+  | relative_url
 %}
 
 <link
@@ -20,6 +19,7 @@
 <link rel="icon" href="{{ base-href | replace: '$file$', 'favicon.svg' }}" type="image/svg+xml" sizes="any">
 <link rel="apple-touch-icon" href="{{ base-href | replace: '$file$', 'apple-touch-icon.png' }}" sizes="180x180">
 <link rel="manifest" href="{{ base-href | replace: '$file$', 'site.webmanifest' }}">
-<meta name="msapplication-TileColor" content="{{ site.data.app.theme.colors.favicon.windows-tile }}">
+<meta name="apple-mobile-web-app-title" content="{{ site.data.app.name }}">
 <meta name="msapplication-config" content="{{ base-href | replace: '$file$', 'browserconfig.xml' }}">
+<meta name="msapplication-TileColor" content="{{ site.data.app.theme.colors.favicon.windows-tile }}">
 <meta name="theme-color" content="{{ site.data.app.theme.colors.favicon.android-theme }}">
